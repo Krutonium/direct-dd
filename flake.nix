@@ -1,5 +1,5 @@
 {
-  description = "direct-dd: write raw disk images from URL using O_DIRECT";
+  description = "direct-dd: Raw disk writer, similar to dd, but utilizing URL's instead of input files.";
 
   inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
   inputs.flake-utils.url = "github:numtide/flake-utils";
