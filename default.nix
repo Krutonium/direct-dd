@@ -18,7 +18,7 @@ pkgs.stdenv.mkDerivation {
   '';
 
   meta = {
-    description = "Raw disk writer with O_DIRECT support from URL, similar to dd";
+    description = "Raw disk writer, similar to dd, but utilizing URL's instead of input files.";
     license = pkgs.lib.licenses.mit;
     platforms = pkgs.lib.platforms.linux;
   };
