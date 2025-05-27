@@ -20,9 +20,25 @@ class Program
         string url = args[0];
         string devicePath = args[1];
 
-        Console.WriteLine($"Downloading image from: {url}");
-        Console.WriteLine($"Writing to device: {devicePath}");
-        Console.WriteLine($"Buffer size: {BufferSize / 1024} KB");
+        Console.WriteLine($"Source: {url}");
+        Console.WriteLine($"Destination: {devicePath}");
+        Console.WriteLine();
+        Console.WriteLine($"Does this look correct? Remember, ALL DATA ON {devicePath} WILL BE DELETED");
+        Console.WriteLine("Y/N");
+        bool cont = false;
+        var answer = Console.ReadLine().Trim();
+        while (!cont)
+        {
+            if (answer != "y")
+            {
+                Environment.Exit(1);
+            }
+            else
+            {
+                cont = true;
+            }
+        }
+        
 
         try
         {
