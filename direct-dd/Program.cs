@@ -29,7 +29,7 @@ class Program
         var answer = Console.ReadLine().Trim();
         while (!cont)
         {
-            if (answer != "y")
+            if (answer.ToLower() != "y")
             {
                 Environment.Exit(1);
             }
